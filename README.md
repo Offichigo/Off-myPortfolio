@@ -48,3 +48,43 @@ Travaux en cours.
 ---
 
 ## 📁 Structure du projet
+
+src/
+components/
+TitleScreen.jsx
+
+<!-- CharacterCreation.jsx
+SkillTree.jsx
+Quests.jsx
+Progress.jsx
+Formations.jsx
+Inventory.jsx
+CV.jsx
+Contact.jsx -->
+
+App.jsx
+main.jsx
+index.css
+
+---
+
+## 🎨 Design
+
+Palette pastel (rose, bleu, lavande, ambre) sur fond crème, avec des fenêtres à bordures 3D en relief façon Windows 95, et un léger décor d'étoiles et de lune en fond.
+
+---
+
+## 👤 Auteure
+
+**Ophélie (Off) Perianin**
+Développeuse web full stack — reconversion, adaTechSchool
+
+- 📧 oph.perianin@gmail.com
+- 💼 [LinkedIn](https://www.linkedin.com/in/oph-élie-perianin)
+- 💻 [GitHub](https://github.com/Offichigo)
+
+---
+
+## 📄 Licence
+
+Projet personnel — tous droits réservés.
