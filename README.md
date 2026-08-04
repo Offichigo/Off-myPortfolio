@@ -72,6 +72,8 @@ index.css
 
 ## 🎨 Design
 
+> 🚫 **Aucun visuel généré par IA.** Tous les éléments graphiques (dont le personnage Sprout) sont créés à la main.
+
 Palette pastel (rose, bleu, lavande, ambre) sur fond crème, avec des fenêtres à bordures 3D en relief façon Windows 95, et un léger décor d'étoiles et de lune en fond.
 
 ---
