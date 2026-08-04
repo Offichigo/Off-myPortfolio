@@ -1,5 +1,7 @@
 # 🌸 Portfolio — Ophélie (Off) Perianin
 
+![No AI Visuals](https://img.shields.io/badge/visuels-100%25_faits_main-ff7fae?style=flat-square)
+
 Portfolio de développeuse web full stack, présenté sous forme d'un site façon fenêtres **Windows 95 pastel**, avec un concept de **création de personnage** pour se présenter.
 
 🔗 Démo en ligne : _à venir_
