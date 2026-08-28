@@ -1,0 +1,36 @@
+.character-bar {
+  background: linear-gradient(
+    90deg,
+    var(--color-blue-title),
+    var(--color-blue-title-dark)
+  );
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 10px 10px 0 0;
+}
+
+.character-bar span {
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.sheet {
+  color: var(--color-blue-title-dark);
+  font-weight: 700;
+}
+
+.sheet:first-of-type {
+  margin-top: 0;
+}
+.title-sheet {
+  padding: 1.5rem;
+}
+.title-sheet p {
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-blue-title);
+}
+
+.title-sheet .start-btn {
+  margin-top: 1.5rem;
+}

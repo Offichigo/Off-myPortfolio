@@ -1,1 +1,50 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  /* Fonds */
+  --color-window-bg: #f3efe8;
+  --color-page-bg: #f7f0f5;
+
+  /* Rose */
+  --color-pink-title: #f193b4;
+  --color-pink-title-dark: #d4537e;
+  --color-pink-text: #b0538a;
+
+  /* Bleu */
+  --color-blue-title: #7fb2e8;
+  --color-blue-title-dark: #3b76b0;
+
+  /* Lavande */
+  --color-lavender-title: #c7a9e8;
+  --color-lavender-title-dark: #8a63c4;
+
+  /* Ambre */
+  --color-amber-title: #ead7b7;
+  --color-amber-title-dark: #c99b4a;
+
+  /* Vert */
+  --color-green-title: #3b8a5f;
+  --color-green-title-dark: #1d9e75;
+
+  /* Relief 3D */
+  --color-relief-light: #ffffff;
+  --color-relief-dark: #8b8b8b;
+  --color-relief-shadow: #4a4a4a;
+
+  /* Textes */
+  --color-text-primary: #2c2c2a;
+  --color-text-secondary: #5f5e5a;
+
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-page-bg);
+}

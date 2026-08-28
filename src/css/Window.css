@@ -1,0 +1,41 @@
+.title-window {
+  width: 100%;
+  max-width: 36rem;
+  background: var(--color-window-bg);
+  border: 2px solid;
+  border-radius: 12px;
+  border-top-color: var(--color-relief-light);
+  border-left-color: var(--color-relief-light);
+  border-right-color: var(--color-relief-dark);
+  border-bottom-color: var(--color-relief-dark);
+  box-shadow: 1px 1px 0 var(--color-relief-shadow);
+}
+
+.title-sheet {
+  padding: 1.5rem;
+}
+
+.start-btn {
+  padding: 0.5rem 1.5rem;
+
+  background: var(--color-pink-title);
+  color: white;
+
+  border: none;
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  animation: color-pulse 2s infinite;
+}
+
+@keyframes color-pulse {
+  0%,
+  100% {
+    background: var(--color-pink-title);
+  }
+
+  50% {
+    background: var(--color-blue-title);
+  }
+}

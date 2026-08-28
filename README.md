@@ -32,7 +32,6 @@ Ce portfolio réunit mes projets, mon parcours et mon CV dans une expérience in
 
 - **React** — bibliothèque UI
 - **Vite** — build tool et serveur de dev
-- **Tailwind CSS** — styles utilitaires
 
 ---
 

@@ -1,9 +1,17 @@
+import { useState } from "react";
 import TitleScreen from "./components/TitleScreen";
+import CharacterScreen from "./components/CharacterScreen";
+import "./App.css";
 
 function App() {
+  const [screen, setScreen] = useState("title");
+
   return (
-    <div className="min-h-screen bg-[#F7F0F5] flex items-center justify-center p-6">
-      <TitleScreen />
+    <div className="app-container">
+      {screen === "title" && (
+        <TitleScreen onStart={() => setScreen("character")} />
+      )}
+      {screen === "character" && <CharacterScreen />}
     </div>
   );
 }
