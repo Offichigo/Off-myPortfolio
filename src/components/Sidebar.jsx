@@ -1,4 +1,5 @@
 import "../css/Sidebar.css";
+import WindowControls from "./WindowControls";
 
 const NAV_ITEMS = [
   { id: "character", label: "Fiche de personnage", icon: "🧑" },
@@ -14,6 +15,7 @@ function Sidebar({ activeScreen, onNavigate }) {
     <div className="sidebar-window">
       <div className="sidebar-bar">
         <span>OFF.EXE</span>
+        <WindowControls />
       </div>
       <nav className="sidebar-nav">
         {NAV_ITEMS.map((item) => (

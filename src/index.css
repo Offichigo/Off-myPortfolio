@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Lexend:wght@400;500;600;700&display=swap");
 
 :root {
   /* Fonds */
@@ -31,13 +32,29 @@
   --color-relief-dark: #8b8b8b;
   --color-relief-shadow: #4a4a4a;
 
+  /*Inventory*/
+  --color-inventory-title: #f4c27a;
+  --color-inventory-dark: #c99036;
+
+  /*Contact boss final*/
+  --color-finalboss-title: #ff9e80;
+  --color-finalboss-dark: #d65c41;
+
+  /* Vert menthe */
+  --color-mint: #9de8cf;
+  --color-mint-dark: #49b38c;
+
   /* Textes */
   --color-text-primary: #2c2c2a;
   --color-text-secondary: #5f5e5a;
 
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-title: "Jersey 15";
 }
 
+h1 {
+  font-family: var(--font-title);
+}
 * {
   margin: 0;
   padding: 0;

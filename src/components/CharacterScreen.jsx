@@ -1,11 +1,14 @@
 import "../css/Window.css";
 import "../css/TitleScreen.css";
 import "../css/CharacterScreen.css";
+import WindowControls from "./WindowControls";
+
 function CharacterScreen() {
   return (
     <div className="title-window">
       <div className="character-bar">
         <span>qui ? — fiche-de-personnage.exe</span>
+        <WindowControls />
       </div>
 
       <div className="title-sheet">

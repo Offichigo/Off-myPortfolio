@@ -10,7 +10,7 @@
   border-radius: 10px 10px 0 0;
 }
 
-.character-bar span {
+.character-bar {
   color: white;
   font-size: 0.875rem;
   font-weight: 500;

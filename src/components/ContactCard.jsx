@@ -6,6 +6,7 @@ function ContactCard() {
       <div className="contact-bar">
         <span>STATUT DU JOUEUR</span>
       </div>
+
       <div className="contact-body">
         <div className="contact-avatar">👤</div>
         <p className="contact-class">

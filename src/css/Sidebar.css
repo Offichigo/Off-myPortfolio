@@ -22,9 +22,12 @@
     var(--color-pink-title-dark)
   );
   padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.sidebar-bar span {
+.sidebar-bar {
   color: white;
   font-size: 0.85rem;
   font-weight: 600;
