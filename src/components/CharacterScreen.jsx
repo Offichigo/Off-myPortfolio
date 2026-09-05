@@ -5,7 +5,7 @@ function CharacterScreen() {
   return (
     <div className="title-window">
       <div className="character-bar">
-        <span>qui ? — création-de-personnage.exe</span>
+        <span>qui ? — fiche-de-personnage.exe</span>
       </div>
 
       <div className="title-sheet">
@@ -62,7 +62,7 @@ function CharacterScreen() {
           <br />
           💻 Développement web
         </p>
-        <button className="start-btn">Créer →</button>
+        <button className="start-btn">Compétences →</button>
       </div>
     </div>
   );

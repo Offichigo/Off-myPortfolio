@@ -1,4 +1,6 @@
+/* Fenêtre et barre de titre */
 .title-bar {
+  border-radius: 12px;
   background: linear-gradient(
     90deg,
     var(--color-pink-title),
@@ -7,7 +9,6 @@
   display: flex;
   align-items: center;
   padding: 4px 8px;
-  border-radius: 10px 10px 0 0;
 }
 
 .title-bar span {
@@ -16,11 +17,7 @@
   font-weight: 500;
 }
 
-.title-content {
-  padding: 2.25rem 1.5rem;
-  text-align: center;
-}
-
+/* Badge style (si réutilisé ailleurs) */
 .badge {
   display: inline-block;
   background: white;
@@ -32,15 +29,117 @@
   margin-bottom: 1rem;
 }
 
-.title-content h1 {
-  font-size: 2rem;
+/* Bouton Start */
+.start-btn {
+  background: var(--color-text-primary);
+  color: white;
+  font-size: 0.875rem;
   font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.start-btn:hover {
+  background: #444;
+}
+
+/* Grille de la scène d'accueil */
+.home-scene {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+    "tl hero tr"
+    "bl hero br";
+  gap: 1.5rem;
+  padding: 2rem;
+  align-items: start;
+}
+
+.home-corner {
+  background: white;
+  border: 2px solid var(--color-relief-dark);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.home-corner--top-left {
+  grid-area: tl;
+}
+.home-corner--top-right {
+  grid-area: tr;
+}
+.home-corner--bottom-left {
+  grid-area: bl;
+  align-self: end;
+}
+.home-corner--bottom-right {
+  grid-area: br;
+  align-self: end;
+}
+
+.home-corner-title {
+  font-weight: 600;
+  color: var(--color-pink-title-dark);
+  margin-bottom: 4px;
+}
+
+.home-hero {
+  grid-area: hero;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sheet-compact {
+  text-align: left;
+}
+
+.sheet-character {
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--color-text-primary);
+}
+
+.sheet-sub {
+  font-size: 0.7rem;
+  color: var(--color-text-secondary);
+}
+
+.home-status-label {
+  font-weight: 600;
+  color: var(--color-green-title-dark);
+}
+
+.home-hero h1 {
+  font-size: 2.5rem;
+  color: var(--color-pink-title-dark);
   margin-bottom: 0.25rem;
 }
 
-.title-content p {
-  font-size: 1rem;
+.home-subtitle {
   color: var(--color-text-secondary);
-  margin-bottom: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.home-bubble {
+  background: white;
+  border: 2px solid var(--color-relief-dark);
+  border-radius: 6px;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.85rem;
+  max-width: 360px;
+  margin: 0 auto 1.5rem;
+}
+
+.sproot-avatar {
+  width: 120px;
+  image-rendering: pixelated;
+  margin-bottom: 1.5rem;
 }

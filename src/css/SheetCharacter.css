@@ -1,0 +1,34 @@
+.character-bar {
+  background: linear-gradient(
+    90deg,
+    var(--color-blue-title),
+    var(--color-blue-title-dark)
+  );
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+}
+
+.character-bar span {
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.sheet-perso {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 1rem;
+}
+
+.sheet-character {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.sheet-perso span:last-child {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}

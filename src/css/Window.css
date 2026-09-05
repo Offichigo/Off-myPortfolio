@@ -1,6 +1,4 @@
 .title-window {
-  width: 100%;
-  max-width: 36rem;
   background: var(--color-window-bg);
   border: 2px solid;
   border-radius: 12px;

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Sidebar from "./components/Sidebar";
+import ContactCard from "./components/ContactCard";
 import TitleScreen from "./components/TitleScreen";
 import CharacterScreen from "./components/CharacterScreen";
 import "./App.css";
@@ -8,10 +10,19 @@ function App() {
 
   return (
     <div className="app-container">
-      {screen === "title" && (
+      {screen === "title" ? (
         <TitleScreen onStart={() => setScreen("character")} />
+      ) : (
+        <div className="app-layout">
+          <div className="app-sidebar-col">
+            <Sidebar activeScreen={screen} onNavigate={setScreen} />
+            <ContactCard />
+          </div>
+          <div className="app-content">
+            {screen === "character" && <CharacterScreen />}
+          </div>
+        </div>
       )}
-      {screen === "character" && <CharacterScreen />}
     </div>
   );
 }
