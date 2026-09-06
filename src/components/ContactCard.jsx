@@ -8,7 +8,7 @@ function ContactCard() {
       </div>
 
       <div className="contact-body">
-        <div className="contact-avatar">👤</div>
+        <div className="contact-avatar">👩🏻</div>
         <p className="contact-class">
           Développeuse Full Stack
           <br />

@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import ContactCard from "./components/ContactCard";
 import TitleScreen from "./components/TitleScreen";
 import CharacterScreen from "./components/CharacterScreen";
+import SkillTree from "./components/SkillTree";
 import "./App.css";
 
 function App() {
@@ -19,7 +20,12 @@ function App() {
             <ContactCard />
           </div>
           <div className="app-content">
-            {screen === "character" && <CharacterScreen />}
+            {screen === "character" && (
+              <CharacterScreen onNext={() => setScreen("skills")} />
+            )}
+            {screen === "skills" && (
+              <SkillTree onNext={() => setScreen("quests")} />
+            )}
           </div>
         </div>
       )}

@@ -28,8 +28,7 @@ function TitleScreen({ onStart }) {
           <p className="home-subtitle">Portfolio interactif</p>
 
           <div className="home-bubble">
-            Hey, moi c'est Sprout ! Je vais te guider dans l'univers d'Off.
-            Prêt·e à explorer son parcours comme dans un vrai RPG ?
+            Prêt·e à explorer le parcours d'Off comme dans un vrai RPG ?
           </div>
 
           <img
