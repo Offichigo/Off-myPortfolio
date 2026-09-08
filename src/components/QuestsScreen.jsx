@@ -43,9 +43,6 @@ function QuestsScreen({ onNext }) {
 
         <div className="quests-body">
           <h2 className="quests-heading">⚔️ Journal des quêtes ⚔️</h2>
-          <p className="quests-subheading">
-            Chaque projet est une aventure, chaque ligne de code une victoire.
-          </p>
 
           {/* Quête principale */}
           <div className="main-quest-card">
