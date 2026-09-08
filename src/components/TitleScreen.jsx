@@ -45,7 +45,7 @@ function TitleScreen({ onStart }) {
             <p className="new-game-class">Classe : Développeuse Full Stack</p>
 
             <button className="start-btn" onClick={onStart}>
-              Entrer dans l'aventure →
+              Entrer dans l'aventure ▶
             </button>
           </div>
         </div>

@@ -101,7 +101,7 @@ function CharacterScreen({ onNext }) {
           💻 Développement web
         </MiniWindow>
         <button className="next-btn" onClick={onNext}>
-          Continuer ▶
+          Compétences ▶
         </button>
       </div>
     </div>

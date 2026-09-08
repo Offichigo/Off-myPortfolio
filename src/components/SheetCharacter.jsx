@@ -14,7 +14,7 @@ function SheetCharacter({ compact = false }) {
   return (
     <div className="title-window">
       <div className="character-bar">
-        <span>joueuse.exe</span>
+        <span>OFF.exe_c'est_qui?</span>
       </div>
       <div className="title-content sheet-perso">
         <span className="sheet-character">Ophélie "Off" Perianin</span>

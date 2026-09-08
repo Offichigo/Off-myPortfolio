@@ -4,6 +4,7 @@ import ContactCard from "./components/ContactCard";
 import TitleScreen from "./components/TitleScreen";
 import CharacterScreen from "./components/CharacterScreen";
 import SkillTree from "./components/SkillTree";
+import QuestsScreen from "./components/QuestsScreen";
 import "./App.css";
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
             )}
             {screen === "skills" && (
               <SkillTree onNext={() => setScreen("quests")} />
+            )}
+            {screen === "quests" && (
+              <QuestsScreen onNext={() => setScreen("progress")} />
             )}
           </div>
         </div>
