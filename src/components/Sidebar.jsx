@@ -2,7 +2,7 @@ import "../css/Sidebar.css";
 import WindowControls from "./WindowControls";
 
 const NAV_ITEMS = [
-  { id: "character", label: "Fiche de personnage", icon: "👩🏻" },
+  { id: "character", label: "Fiche de personnage", icon: "💖" },
   { id: "skills", label: "Compétences", icon: "🌳" },
   { id: "quests", label: "Quêtes", icon: "⚔️" },
   { id: "progress", label: "Progression", icon: "📈" },
