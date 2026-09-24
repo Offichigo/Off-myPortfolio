@@ -20,11 +20,9 @@ Ce portfolio réunit mes projets, mon parcours et mon CV dans une expérience in
 - 🧑 **Création de personnage** — bio, stats, traits
 - 🌳 **Arbre de compétences** — compétences classées en 4 branches (dev, outils, créa, soft skills)
 - ⚔️ **Quêtes** — mes projets, dont **Sprout**, mon projet de fin de formation (RNCP)
-- 📈 **Progression** — timeline de mon parcours professionnel
-- 🎓 **Formations** — mes diplômes
+- 📈 **Progression** — timeline de mon parcours professionnel et des 🎓 formations — mes diplômes
 - 🎒 **Inventaire** — mes inspirations et centres d'intérêt
-- 📄 **CV** — téléchargement direct
-- ✉️ **Contact**
+- ✉️ **Contact**- 📄 avec CV — téléchargement direct
 
 ---
 
@@ -53,15 +51,12 @@ Travaux en cours.
 src/
 components/
 TitleScreen.jsx
-
-<!-- CharacterCreation.jsx
+CharacterScreen.jsx
 SkillTree.jsx
-Quests.jsx
-Progress.jsx
-Formations.jsx
+QuestsScreen.jsx
+<!-- <--Progress.jsx
 Inventory.jsx
-CV.jsx
-Contact.jsx -->
+Contact.jsx --> -->
 
 App.jsx
 main.jsx

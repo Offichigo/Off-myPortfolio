@@ -1,0 +1,84 @@
+.inventory-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inventory-window {
+  width: 100%;
+}
+
+.inventory-body {
+  padding: 20px 24px 28px;
+}
+
+.inventory-heading {
+  margin: 0 0 4px;
+  font-size: 1.4rem;
+}
+
+.inventory-subheading {
+  margin: 0 0 20px;
+  opacity: 0.75;
+  font-size: 0.95rem;
+}
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.inventory-item {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--color-cream, #fdf8ef);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inventory-item-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.inventory-item-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.inventory-item-note {
+  margin: 0;
+  font-size: 0.88rem;
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+.inventory-item-link {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: underline;
+  color: inherit;
+  align-self: flex-start;
+}
+
+/* Rareté façon jeu vidéo : bordure colorée selon l'importance */
+.inventory-item--epic {
+  border-color: var(--color-pink, #e88fb0);
+  background: linear-gradient(180deg, #fff 0%, #fdf2f6 100%);
+}
+
+.inventory-item--rare {
+  border-color: var(--color-blue, #8fb8e8);
+  background: linear-gradient(180deg, #fff 0%, #f0f6fd 100%);
+}
+
+.inventory-item--common {
+  border-color: var(--color-green, #9fcf8f);
+  background: linear-gradient(180deg, #fff 0%, #f3faf0 100%);
+}

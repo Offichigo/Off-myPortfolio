@@ -5,7 +5,10 @@ import TitleScreen from "./components/TitleScreen";
 import CharacterScreen from "./components/CharacterScreen";
 import SkillTree from "./components/SkillTree";
 import QuestsScreen from "./components/QuestsScreen";
+import ProgressScreen from "./components/ProgressScreen";
 import "./App.css";
+import InventoryScreen from "./components/InventoryScreen";
+import ContactScreen from "./components/ContactScreen";
 
 function App() {
   const [screen, setScreen] = useState("title");
@@ -30,6 +33,13 @@ function App() {
             {screen === "quests" && (
               <QuestsScreen onNext={() => setScreen("progress")} />
             )}
+            {screen === "progress" && (
+              <ProgressScreen onNext={() => setScreen("inventory")} />
+            )}
+            {screen === "inventory" && (
+              <InventoryScreen onNext={() => setScreen("contact")} />
+            )}
+            {screen === "contact" && <ContactScreen />}
           </div>
         </div>
       )}

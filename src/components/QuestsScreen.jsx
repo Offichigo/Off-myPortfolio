@@ -8,18 +8,20 @@ const SECONDARY_QUESTS = [
     title: "WC Dex",
     difficulty: 2,
     description:
-      "Projet d'étude,consigne manipulation donnée API publiques de Paris. J'ai adapté le projet à ma façon. J'ai transformer les données OpenData Nantes Métropole en Pokédex des toilettes publiques. Lien : https://adataviz-five.vercel.app/",
+      "Projet d'étude autour de la manipulation d'une API publique (données OpenData Paris). Je l'ai adapté à ma façon en transformant les données OpenData de Nantes Métropole en Pokédex des toilettes publiques.",
     stack: ["JavaScript", "Fetch API", "OpenData", "CSS"],
-    reward: "+100 XP",
+    reward: "+120 XP",
+    demoUrl: "https://adataviz-five.vercel.app/",
   },
   {
     id: "quizqueen",
     title: "Quiz Queen",
     difficulty: 2,
     description:
-      "Application de quiz interactif avec questions dynamiques, score final et design personnalisé.",
+      "Application de quiz interactif avec chargement dynamique des questions, calcul du score final et design personnalisé. Projet réalisé en équipe de 3.",
     stack: ["JavaScript", "DOM", "JSON", "CSS", "Git"],
-    reward: "+80 XP",
+    reward: "+90 XP",
+    demoUrl: "https://quiz-queen-theta.vercel.app/",
   },
   {
     id: "adashboard",
@@ -28,7 +30,9 @@ const SECONDARY_QUESTS = [
     description:
       "Application full stack pour gérer et visualiser des compétences et leurs tâches associées.",
     stack: ["React", "Express", "PostgreSQL", "Docker"],
-    reward: "+120 XP",
+    reward: "+100 XP",
+    githubUrl:
+      "https://github.com/Offichigo/giselehalimi_adashboard_offperianin",
   },
 ];
 
@@ -49,13 +53,22 @@ function QuestsScreen({ onNext }) {
             <span className="main-quest-tag">Quête principale</span>
             <h3 className="main-quest-title">Sprout Quest</h3>
             <p className="main-quest-desc">
-              Consigne : Créer une application web de gestion de projet.
-              Création application de gestion des tâches familiales, de façon
+              Créer une application web de gestion des tâches familiales,
               gamifiée, pour impliquer les enfants dans les tâches ménagères.
             </p>
 
             <div className="quest-stack">
-              {["React", "Express", "PostgreSQL", "Docker"].map((tech) => (
+              {[
+                "JavaScript",
+                "React",
+                "Node.js/Express",
+                "PostgreSQL",
+                "Docker",
+                "Figma",
+                "Docusaurus",
+                "Jest",
+                "CSS",
+              ].map((tech) => (
                 <span key={tech} className="quest-badge">
                   {tech}
                 </span>
@@ -79,7 +92,7 @@ function QuestsScreen({ onNext }) {
               🏆 Boss final : soutenance RNCP 6 — 2 novembre 2026
             </div>
           </div>
-
+          {/* **TODO AJOUT DES LIENS  */}
           {/* Quêtes secondaires */}
           <h3 className="secondary-heading">✦ Quêtes secondaires ✦</h3>
           <div className="secondary-quests-grid">

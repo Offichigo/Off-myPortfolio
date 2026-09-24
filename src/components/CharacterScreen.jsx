@@ -54,10 +54,11 @@ function CharacterScreen({ onNext }) {
               <p className="sheet-label">🕯️ Bio</p>
               <div className="sheet-bio-box">
                 <p>
-                  Après plusieurs quêtes secondaires dans la restauration, le
+                  Après quelques quêtes secondaires dans la restauration, le
                   nettoyage, l'éducation, Off débloque en 2013 la compétence
                   "Reprise d'études". Cette décision lui permet d'obtenir un
-                  DAEU, puis une licence et un master en cinéma et audiovisuel.
+                  DAEU, puis une licence études culturelles et un master en
+                  cinéma et audiovisuel.
                 </p>
                 <p>
                   Quelques années plus tard, elle rejoint la guilde des
