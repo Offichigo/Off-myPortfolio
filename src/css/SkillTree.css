@@ -113,6 +113,8 @@
   scroll-snap-align: center;
   flex-shrink: 0;
   min-width: 140px;
+  /* les intitulés longs passent à la ligne au lieu d'élargir la case */
+  max-width: 180px;
   background: white;
   border: 2px solid var(--color-relief-dark);
   border-radius: 10px;
@@ -122,7 +124,7 @@
   font-weight: 600;
   color: var(--color-text-primary);
 
-  opacity: 0.4;
+  opacity: 0.7;
   transform: scale(0.85);
   transition:
     opacity 0.25s ease,
@@ -133,4 +135,108 @@
   opacity: 1;
   transform: scale(1.05);
   box-shadow: 0 4px 0 var(--color-relief-dark);
+}
+
+/* Les cases de la roue sont des boutons : on remet le style du texte */
+.wheel-item {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* ===== Responsive mobile (< 768 px) ===== */
+@media (max-width: 767px) {
+  .skill-body {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .skill-branch {
+    min-width: 0;
+    flex-basis: 100%;
+  }
+
+  .wheel-item {
+    min-height: 44px;
+  }
+}
+
+/* ===== Flèches de la roue : montrent qu'on peut faire glisser ===== */
+.skill-wheel-wrap {
+  position: relative;
+}
+
+.wheel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 0.65rem;
+  color: var(--color-text-primary);
+  background: var(--color-window-bg);
+  border: 2px solid;
+  border-color: var(--color-relief-light) var(--color-relief-dark)
+    var(--color-relief-dark) var(--color-relief-light);
+  border-radius: 50%;
+  box-shadow: 1px 1px 0 var(--color-relief-shadow);
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+/* zone cliquable invisible élargie à 44 px pour le tactile */
+.wheel-arrow::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+}
+
+.wheel-arrow--prev {
+  left: 0;
+}
+
+.wheel-arrow--next {
+  right: 0;
+}
+
+.wheel-arrow:hover:not(:disabled),
+.wheel-arrow:focus-visible {
+  background: white;
+}
+
+.wheel-arrow:active:not(:disabled) {
+  border-color: var(--color-relief-dark) var(--color-relief-light)
+    var(--color-relief-light) var(--color-relief-dark);
+  box-shadow: none;
+}
+
+/* au bout de la roue, la flèche s'efface */
+.wheel-arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* petite impulsion vers la droite pour inviter à glisser */
+.wheel-arrow--next:not(:disabled) {
+  animation: wheel-nudge 1.6s ease-in-out infinite;
+}
+
+@keyframes wheel-nudge {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 4px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wheel-arrow--next:not(:disabled) {
+    animation: none;
+  }
 }

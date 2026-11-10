@@ -11,7 +11,7 @@ function CharacterScreen({ onNext }) {
       <div className="character-main-col">
         <div className="title-window">
           <div className="character-bar">
-            <span>fiche-de-personnage.exe</span>
+            <span>fiche-personnage.exe</span>
             <WindowControls />
           </div>
 
@@ -35,9 +35,7 @@ function CharacterScreen({ onNext }) {
             <div className="sheet-field">
               <p className="sheet-label">Classe actuelle</p>
               <div className="sheet-value-box">
-                <span>
-                  Conceptrice Développeuse d'Applications (en formation)
-                </span>
+                <span>Conceptrice Développeuse d'Applications · RNCP 6</span>
                 <span className="sheet-icon">💻</span>
               </div>
             </div>
@@ -45,7 +43,9 @@ function CharacterScreen({ onNext }) {
             <div className="sheet-field">
               <p className="sheet-label">Quête principale</p>
               <div className="sheet-value-box">
-                <span>Devenir développeuse web full stack</span>
+                <span>
+                  Décrocher un poste de développeuse web junior en full remote
+                </span>
                 <span className="sheet-icon">⚔️</span>
               </div>
             </div>
@@ -55,9 +55,9 @@ function CharacterScreen({ onNext }) {
               <div className="sheet-bio-box">
                 <p>
                   Après quelques quêtes secondaires dans la restauration, le
-                  nettoyage, l'éducation, Off débloque en 2013 la compétence
-                  "Reprise d'études". Cette décision lui permet d'obtenir un
-                  DAEU, puis une licence études culturelles et un master en
+                  nettoyage et l'éducation, Off débloque en 2013 la compétence
+                  « Reprise d'études ». Cette décision lui permet d'obtenir un
+                  DAEU, puis une licence en études culturelles et un master en
                   cinéma et audiovisuel.
                 </p>
                 <p>
@@ -68,9 +68,10 @@ function CharacterScreen({ onNext }) {
                   plus accessibles.
                 </p>
                 <p>
-                  Aujourd'hui, une nouvelle quête est en cours : maîtriser le
-                  développement web et construire des expériences utiles,
-                  inclusives et créatives.
+                  Aujourd'hui, titre de Conceptrice Développeuse d'Applications
+                  en poche, une nouvelle quête commence : rejoindre une équipe
+                  en full remote comme développeuse web junior, pour construire
+                  des expériences utiles, inclusives et créatives.
                 </p>
               </div>
             </div>
@@ -81,7 +82,7 @@ function CharacterScreen({ onNext }) {
       <div className="character-side-col">
         <CharacterPortrait />
 
-        <MiniWindow title="skills.exe">
+        <MiniWindow title="atouts.exe">
           ✨ Curiosité
           <br />
           🎨 Créativité
@@ -92,7 +93,7 @@ function CharacterScreen({ onNext }) {
           <br />⚡ Persévérance
         </MiniWindow>
 
-        <MiniWindow title="🩷 love.exe">
+        <MiniWindow title="love.exe">
           🎮 Jeux vidéo
           <br />
           🎬 Cinéma

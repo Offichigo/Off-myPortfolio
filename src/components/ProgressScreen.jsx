@@ -21,30 +21,34 @@ const CAREER = [
     id: "animatrice",
     title: "Animatrice numérique",
     place: "ATDEC, Nantes",
-    date: "Oct. 2023 – Aujourd'hui",
+    date: "Oct. 2023 – Nov. 2026",
     color: "blue",
   },
   {
     id: "dev",
-    title: "En formation de Développeuse Full Stack",
-    place: "adaTechSchool",
-    date: "Depuis janv. 2026",
+    title: "Stage développeuse web full stack",
+    place: "GitQuest, Nantes · full remote",
+    date: "Sept. – Oct. 2026",
     color: "green",
   },
 ];
 
 const FORMATIONS = [
   {
-    title: "Licence études culturelles",
+    title: "Licence en études culturelles",
     place: "Université de Lorraine",
     date: "2017",
   },
   { title: "Master cinéma et audiovisuel", place: "IECA", date: "2019" },
-  { title: "Titre pro médiation numérique", place: "Cefiac", date: "2023" },
   {
-    title: "Formation Développement fullstack",
-    place: "adaTechSchool",
-    date: "Depuis 2026",
+    title: "Titre pro Responsable espace médiation numérique",
+    place: "Cefiac",
+    date: "2023",
+  },
+  {
+    title: "Titre pro CDA · RNCP 6 (bac+3)",
+    place: "Ada Tech School",
+    date: "2026",
   },
 ];
 
@@ -53,7 +57,7 @@ function ProgressScreen({ onNext }) {
     <div className="progress-screen">
       <div className="title-window progress-window">
         <div className="character-bar">
-          <span>progress.exe — parcours</span>
+          <span>progression.exe</span>
           <WindowControls />
         </div>
 
@@ -96,7 +100,7 @@ function ProgressScreen({ onNext }) {
       </div>
 
       <button className="next-btn" onClick={onNext}>
-        Inventaire →
+        Inventaire ▶
       </button>
     </div>
   );

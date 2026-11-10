@@ -10,9 +10,9 @@ function ContactCard() {
       <div className="contact-body">
         <div className="contact-avatar">🖥️</div>
         <p className="contact-class">
-          Développeuse Full Stack
+          Développeuse web junior
           <br />
-          en devenir
+          en full remote
         </p>
 
         <div className="contact-links">

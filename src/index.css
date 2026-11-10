@@ -8,24 +8,25 @@
 
   /* Rose */
   --color-pink-title: #f193b4;
-  --color-pink-title-dark: #d4537e;
+  --color-pink-title-dark: #b03c66;
   --color-pink-text: #b0538a;
 
   /* Bleu */
   --color-blue-title: #7fb2e8;
-  --color-blue-title-dark: #3b76b0;
+  --color-blue-title-dark: #2f6396;
 
   /* Lavande */
   --color-lavender-title: #c7a9e8;
-  --color-lavender-title-dark: #8a63c4;
+  --color-lavender-title-dark: #7350a8;
 
   /* Ambre */
   --color-amber-title: #ead7b7;
   --color-amber-title-dark: #c99b4a;
+  --color-amber-text: #8a6420; /* version lisible pour du texte */
 
   /* Vert */
   --color-green-title: #3b8a5f;
-  --color-green-title-dark: #1d9e75;
+  --color-green-title-dark: #1f6e4a;
 
   /* Relief 3D */
   --color-relief-light: #ffffff;
@@ -64,4 +65,17 @@ h1 {
 body {
   font-family: var(--font-sans);
   background: var(--color-page-bg);
+}
+
+/* Texte lu par les lecteurs d'écran mais invisible à l'écran */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

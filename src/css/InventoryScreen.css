@@ -13,14 +13,17 @@
 }
 
 .inventory-heading {
-  margin: 0 0 4px;
-  font-size: 1.4rem;
+  margin: 0 0 0.25rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--color-pink-title-dark);
 }
 
 .inventory-subheading {
-  margin: 0 0 20px;
-  opacity: 0.75;
-  font-size: 0.95rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
 }
 
 .inventory-grid {
@@ -30,10 +33,10 @@
 }
 
 .inventory-item {
-  border: 2px solid #000;
-  border-radius: 8px;
+  border: 2px solid var(--color-relief-dark);
+  border-radius: 10px;
   padding: 16px;
-  background: var(--color-cream, #fdf8ef);
+  background: white;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
@@ -63,22 +66,36 @@
   font-size: 0.85rem;
   font-weight: 600;
   text-decoration: underline;
-  color: inherit;
+  color: var(--color-pink-title-dark);
   align-self: flex-start;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 /* Rareté façon jeu vidéo : bordure colorée selon l'importance */
 .inventory-item--epic {
-  border-color: var(--color-pink, #e88fb0);
+  border-color: var(--color-pink-title);
   background: linear-gradient(180deg, #fff 0%, #fdf2f6 100%);
 }
 
 .inventory-item--rare {
-  border-color: var(--color-blue, #8fb8e8);
+  border-color: var(--color-blue-title);
   background: linear-gradient(180deg, #fff 0%, #f0f6fd 100%);
 }
 
 .inventory-item--common {
-  border-color: var(--color-green, #9fcf8f);
+  border-color: var(--color-mint-dark);
   background: linear-gradient(180deg, #fff 0%, #f3faf0 100%);
+}
+
+/* ===== Responsive mobile (< 768 px) ===== */
+@media (max-width: 767px) {
+  .inventory-body {
+    padding: 1rem;
+  }
+
+  .inventory-grid {
+    grid-template-columns: 1fr;
+  }
 }

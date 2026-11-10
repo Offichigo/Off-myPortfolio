@@ -4,7 +4,7 @@
   background: linear-gradient(
     90deg,
     var(--color-pink-title),
-    var(--color-pink-title-dark)
+    color-mix(in srgb, var(--color-pink-title) 70%, var(--color-pink-title-dark))
   );
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
 }
 
 .title-bar {
-  color: white;
+  color: var(--color-text-primary);
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -31,8 +31,8 @@
 
 /* Bouton Start */
 .start-btn {
-  background: var(--color-text-primary);
-  color: white;
+  background: var(--color-pink-title);
+  color: var(--color-text-primary);
   font-size: 0.875rem;
   font-weight: 500;
   padding: 0.5rem 1.5rem;
@@ -107,7 +107,7 @@
 }
 
 .sheet-sub {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: var(--color-text-secondary);
 }
 
@@ -118,7 +118,7 @@
 
 .home-status-date {
   font-weight: 600;
-  color: var(--color-pink-title);
+  color: var(--color-pink-title-dark);
 }
 .home-hero h1 {
   font-size: 4.5rem;
@@ -127,7 +127,7 @@
 }
 
 .home-subtitle {
-  color: var(--color-pink-title);
+  color: var(--color-pink-title-dark);
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -198,4 +198,71 @@
   font-size: 0.8rem;
   color: var(--color-text-secondary);
   margin-bottom: 10px;
+}
+
+/* Actions de l'écran titre : démarrer + CV */
+.new-game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  background: white;
+  color: var(--color-pink-title-dark);
+  font-size: 0.875rem;
+  font-weight: 600;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--color-pink-title-dark);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cv-download-btn:hover,
+.cv-download-btn:focus-visible {
+  background: var(--color-pink-title-dark);
+  color: white;
+}
+
+/* ===== Responsive mobile (< 768 px) ===== */
+@media (max-width: 767px) {
+  .home-scene {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "hero hero"
+      "tl tr"
+      "bl br";
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .home-corner {
+    align-self: stretch;
+  }
+
+  .home-hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .new-game-panel {
+    width: 100%;
+  }
+
+  .new-game-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .new-game-actions .start-btn {
+    min-height: 48px;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
 }

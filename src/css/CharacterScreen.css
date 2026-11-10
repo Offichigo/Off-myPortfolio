@@ -2,7 +2,7 @@
   background: linear-gradient(
     90deg,
     var(--color-blue-title),
-    var(--color-blue-title-dark)
+    color-mix(in srgb, var(--color-blue-title) 70%, var(--color-blue-title-dark))
   );
   display: flex;
   align-items: center;
@@ -11,9 +11,9 @@
 }
 
 .character-bar {
-  color: white;
+  color: var(--color-text-primary);
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .sheet {
   color: var(--color-blue-title-dark);
@@ -152,7 +152,7 @@
 }
 
 .portrait-note {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: var(--color-text-secondary);
   font-style: italic;
 }
@@ -160,7 +160,7 @@
   margin-top: 1rem;
   padding: 0.7rem 1.5rem;
   background: var(--color-blue-title);
-  color: white;
+  color: var(--color-text-primary);
   font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -181,4 +181,36 @@
 .next-btn:active {
   transform: translateY(2px);
   box-shadow: 0 2px 0 var(--color-text-primary);
+}
+
+/* ===== Responsive mobile (< 768 px) ===== */
+@media (max-width: 767px) {
+  .character-main-col,
+  .character-side-col {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .title-sheet {
+    padding: 1rem;
+  }
+
+  .sheet-value-box {
+    gap: 8px;
+  }
+
+  /* pas de double scroll sur mobile : la bio s'affiche en entier */
+  .sheet-bio-box {
+    max-height: none;
+  }
+
+  .portrait-frame {
+    max-width: 260px;
+    margin: 0 auto 0.5rem;
+  }
+
+  .next-btn {
+    min-height: 48px;
+    white-space: normal;
+  }
 }

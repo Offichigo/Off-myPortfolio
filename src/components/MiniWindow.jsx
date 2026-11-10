@@ -1,4 +1,5 @@
 import "../css/Window.css";
+import "../css/MiniWindow.css";
 import WindowControls from "./WindowControls";
 
 function MiniWindow({ title, children }) {

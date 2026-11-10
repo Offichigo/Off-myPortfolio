@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Sidebar from "./components/Sidebar";
 import ContactCard from "./components/ContactCard";
 import TitleScreen from "./components/TitleScreen";
@@ -13,6 +13,11 @@ import ContactScreen from "./components/ContactScreen";
 function App() {
   const [screen, setScreen] = useState("title");
 
+  // À chaque changement d'écran, on remonte en haut de la page (utile sur mobile)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [screen]);
+
   return (
     <div className="app-container">
       {screen === "title" ? (
@@ -23,7 +28,11 @@ function App() {
             <Sidebar activeScreen={screen} onNavigate={setScreen} />
             <ContactCard />
           </div>
-          <div className="app-content">
+          <main className="app-content">
+            {/* Titre principal pour les lecteurs d'écran (invisible à l'écran) */}
+            <h1 className="visually-hidden">
+              Portfolio d'Ophélie « Off » Perianin, développeuse web junior
+            </h1>
             {screen === "character" && (
               <CharacterScreen onNext={() => setScreen("skills")} />
             )}
@@ -40,7 +49,7 @@ function App() {
               <InventoryScreen onNext={() => setScreen("contact")} />
             )}
             {screen === "contact" && <ContactScreen />}
-          </div>
+          </main>
         </div>
       )}
     </div>

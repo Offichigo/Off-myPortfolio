@@ -5,7 +5,7 @@ function SheetCharacter({ compact = false }) {
     return (
       <div className="sheet-compact">
         <p className="sheet-character">Ophélie "Off" Perianin</p>
-        <p className="sheet-sub">Développeuse Full Stack en devenir</p>
+        <p className="sheet-sub">Développeuse web full stack junior</p>
         <p className="sheet-sub">📍 Nantes</p>
       </div>
     );
@@ -19,7 +19,7 @@ function SheetCharacter({ compact = false }) {
       <div className="title-content sheet-perso">
         <span className="sheet-character">Ophélie "Off" Perianin</span>
         <span className="sheet-character">
-          Développeuse Full Stack en devenir
+          Développeuse web full stack junior
         </span>
         <span>Nantes</span>
       </div>

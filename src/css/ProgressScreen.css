@@ -16,8 +16,8 @@
 
 .progress-heading {
   text-align: center;
-  font-size: 1.2rem;
-  color: var(--color-text-primary);
+  font-size: 1.3rem;
+  color: var(--color-pink-title-dark);
   margin-bottom: 1.5rem;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .timeline-date {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: var(--color-text-secondary);
   font-style: italic;
 }
@@ -131,13 +131,20 @@
 }
 
 .formation-place {
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   color: var(--color-text-secondary);
 }
 
 .formation-date {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: var(--color-lavender-title-dark);
   font-weight: 600;
   flex-shrink: 0;
+}
+
+/* ===== Responsive mobile (< 768 px) ===== */
+@media (max-width: 767px) {
+  .progress-body {
+    padding: 1rem;
+  }
 }

@@ -10,7 +10,9 @@ const BRANCHES = [
     color: "green",
     skills: [
       "JavaScript",
+      "TypeScript",
       "React",
+      "Next.js",
       "Node.js / Express",
       "PostgreSQL",
       "Docker",
@@ -18,10 +20,12 @@ const BRANCHES = [
       "HTML / CSS",
       "Manipulation du DOM",
       "Gestion de versions Git",
-      "Fetch/API /Open data",
-      "Gestion de base de donnée",
-      "Tests unitaires",
-      "Gestion de projet web, jeux vidéo et audiovisuelle",
+      "Fetch API / OpenData",
+      "Conception de bases de données (MCD / MLD)",
+      "Tests unitaires (Jest, Vitest)",
+      "Accessibilité web / Mobile first",
+      "Sécurité web",
+      "Gestion de projets web, jeux vidéo et audiovisuels",
     ],
   },
   {
@@ -60,7 +64,7 @@ const BRANCHES = [
       "Pédagogie numérique",
       "Autonomie",
       "Curiosité",
-      "Ecoute active",
+      "Écoute active",
       "Gestion des conflits",
       "Persévérance",
     ],
@@ -72,7 +76,7 @@ function SkillTree({ onNext }) {
     <div className="skill-screen">
       <div className="title-window skill-window">
         <div className="character-bar">
-          <span>OFF.exe_compétences</span>
+          <span>competences.exe</span>
           <WindowControls />
         </div>
 

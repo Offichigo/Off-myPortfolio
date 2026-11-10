@@ -21,4 +21,31 @@
 
 .app-content {
   flex: 1;
+  /* empêche la roue de compétences d'élargir la colonne */
+  min-width: 0;
+}
+
+/* ===== Responsive mobile (< 768 px) ===== */
+@media (max-width: 767px) {
+  .app-container {
+    padding: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .app-layout {
+    flex-direction: column;
+    gap: 1rem;
+    /* place pour la barre des tâches fixée en bas */
+    padding-bottom: 72px;
+  }
+
+  /* la colonne disparaît : le menu devient flottant, la carte contact est masquée */
+  .app-sidebar-col {
+    display: contents;
+  }
+
+  .app-content {
+    width: 100%;
+    min-width: 0;
+  }
 }

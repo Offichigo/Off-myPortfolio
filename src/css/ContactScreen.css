@@ -13,24 +13,35 @@
   text-align: center;
 }
 
+/* Sprout rose qui accueille sur l'écran Contact */
+.contact-screen-sprout {
+  display: block;
+  width: 110px;
+  height: auto;
+  margin: 0 auto 0.5rem;
+}
+
 .contact-screen-heading {
-  margin: 0 0 6px;
-  font-size: 1.5rem;
+  margin: 0 0 0.25rem;
+  font-size: 1.3rem;
+  color: var(--color-pink-title-dark);
 }
 
 .contact-screen-subheading {
-  margin: 0 0 28px;
-  opacity: 0.75;
-  font-size: 0.95rem;
+  margin: 0 0 1.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
 }
 
 .contact-screen-cv-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   margin-bottom: 28px;
   padding: 10px 20px;
-  border: 2px solid #000;
-  border-radius: 8px;
-  background: var(--color-amber, #f0c674);
+  border: 2px solid var(--color-text-primary);
+  border-radius: 999px;
+  background: var(--color-inventory-title);
   font-weight: 700;
   font-size: 0.95rem;
   text-decoration: none;
@@ -56,9 +67,9 @@
   align-items: center;
   gap: 8px;
   padding: 28px 16px;
-  border: 2px solid #000;
+  border: 2px solid var(--color-relief-dark);
   border-radius: 10px;
-  background: var(--color-cream, #fdf8ef);
+  background: white;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
   text-decoration: none;
   color: inherit;
@@ -87,13 +98,29 @@
 }
 
 .contact-screen-card--pink {
-  border-color: var(--color-pink, #e88fb0);
+  border-color: var(--color-pink-title);
 }
 
 .contact-screen-card--blue {
-  border-color: var(--color-blue, #8fb8e8);
+  border-color: var(--color-blue-title);
 }
 
 .contact-screen-card--lavender {
-  border-color: var(--color-lavender, #b8a9e8);
+  border-color: var(--color-lavender-title);
+}
+
+/* ===== Responsive mobile (< 768 px) ===== */
+@media (max-width: 767px) {
+  .contact-screen-body {
+    padding: 1rem;
+  }
+
+  .contact-screen-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .contact-screen-card {
+    padding: 16px;
+  }
 }

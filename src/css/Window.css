@@ -17,7 +17,7 @@
   padding: 0.9rem 2.5rem;
 
   background: var(--color-pink-title);
-  color: white;
+  color: var(--color-text-primary);
 
   font-size: 1.1rem;
   font-weight: 700;
@@ -90,6 +90,27 @@
   border-left-color: var(--color-relief-shadow);
   border-right-color: var(--color-relief-light);
   border-bottom-color: var(--color-relief-light);
+}
+
+/* Bouton réduire : trait dessiné en CSS (le caractère « _ » rendait mal) */
+.window-btn--min::before {
+  content: "";
+  width: 9px;
+  height: 3px;
+  margin-top: 8px;
+  background: currentColor;
+  border-radius: 1px;
+}
+
+/* Bouton agrandir : carré avec barre de titre épaisse, même trait que « réduire » */
+.window-btn--max::before {
+  content: "";
+  box-sizing: border-box;
+  width: 10px;
+  height: 9px;
+  border: 1px solid currentColor;
+  border-top-width: 3px;
+  border-radius: 1px;
 }
 
 .window-btn--close:hover {

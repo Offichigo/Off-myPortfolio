@@ -17,13 +17,13 @@
   background: linear-gradient(
     90deg,
     var(--color-pink-title),
-    var(--color-pink-title-dark)
+    color-mix(in srgb, var(--color-pink-title) 70%, var(--color-pink-title-dark))
   );
   padding: 6px 10px;
 }
 
 .contact-bar span {
-  color: white;
+  color: var(--color-text-primary);
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -73,4 +73,12 @@
   background: #fff;
   color: var(--color-text-primary);
   border-radius: 12px;
+}
+
+/* ===== Responsive mobile (< 768 px) ===== */
+/* Les mêmes infos sont sur l'écran Contact, accessible depuis le menu Démarrer */
+@media (max-width: 767px) {
+  .contact-window {
+    display: none;
+  }
 }

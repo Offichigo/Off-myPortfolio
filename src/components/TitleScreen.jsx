@@ -18,9 +18,9 @@ function TitleScreen({ onStart }) {
         </div>
 
         <div className="home-corner home-corner--top-right">
-          <p className="home-status-label">⭐ Disponible</p>
-          <p>recherche alternance</p>
-          <p className="home-status-date"> janvier 2027</p>
+          <p className="home-status-label">⭐ Disponible dès maintenant</p>
+          <p>poste de développeuse web junior</p>
+          <p className="home-status-date">🏠 Full remote</p>
         </div>
 
         <div className="home-hero">
@@ -40,13 +40,24 @@ function TitleScreen({ onStart }) {
           <div className="new-game-panel">
             <p className="new-game-title">Nouvelle partie</p>
             <p className="new-game-level">
-              🌱 Statut : En pleine montée de compétences
+              🌱 Statut : Titre CDA obtenu · RNCP 6
             </p>
-            <p className="new-game-class">Classe : Développeuse Full Stack</p>
+            <p className="new-game-class">
+              Classe : Développeuse web full stack junior
+            </p>
 
-            <button className="start-btn" onClick={onStart}>
-              Entrer dans l'aventure ▶
-            </button>
+            <div className="new-game-actions">
+              <button className="start-btn" onClick={onStart}>
+                Entrer dans l'aventure ▶
+              </button>
+              <a
+                href="/cv-off-perianin.pdf"
+                download="cv-off-perianin.pdf"
+                className="cv-download-btn"
+              >
+                📄 Télécharger mon CV (PDF)
+              </a>
+            </div>
           </div>
         </div>
 

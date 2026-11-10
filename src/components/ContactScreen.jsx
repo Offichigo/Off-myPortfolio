@@ -1,6 +1,7 @@
 import "../css/Window.css";
 import "../css/ContactScreen.css";
 import WindowControls from "./WindowControls";
+import sproutRose from "../assets/sprout-rose.png";
 
 const LINKS = [
   {
@@ -39,18 +40,23 @@ function ContactScreen() {
         </div>
 
         <div className="contact-screen-body">
+          <img
+            src={sproutRose}
+            alt="Sprout, le compagnon d'Off, qui sourit"
+            className="contact-screen-sprout"
+          />
           <h2 className="contact-screen-heading">📡 Invoquer Off</h2>
           <p className="contact-screen-subheading">
-            Disponible pour une alternance à partir de janvier 2027 — n'hésite
-            pas à me contacter.
+            Disponible dès maintenant pour un poste de développeuse web junior
+            en full remote — n'hésite pas à me contacter.
           </p>
 
           <a
-            href="/cv/CV_Ophelie_Perianin.pdf"
-            download="CV_Ophelie_Perianin.pdf"
+            href="/cv-off-perianin.pdf"
+            download="cv-off-perianin.pdf"
             className="contact-screen-cv-btn"
           >
-            📄 Télécharger mon CV
+            📄 Télécharger mon CV (PDF)
           </a>
 
           <div className="contact-screen-grid">
