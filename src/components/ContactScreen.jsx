@@ -47,8 +47,8 @@ function ContactScreen() {
           />
           <h2 className="contact-screen-heading">📡 Invoquer Off</h2>
           <p className="contact-screen-subheading">
-            Disponible dès maintenant pour un poste de développeuse web junior
-            en full remote — n'hésite pas à me contacter.
+            Disponible dès maintenant pour un poste de développeuse web junior,
+            à Nantes ou en full remote — n'hésite pas à me contacter.
           </p>
 
           <a

@@ -20,7 +20,7 @@ function TitleScreen({ onStart }) {
         <div className="home-corner home-corner--top-right">
           <p className="home-status-label">⭐ Disponible dès maintenant</p>
           <p>poste de développeuse web junior</p>
-          <p className="home-status-date">🏠 Full remote</p>
+          <p className="home-status-date">🏠 Nantes ou full remote</p>
         </div>
 
         <div className="home-hero">

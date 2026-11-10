@@ -44,7 +44,8 @@ function CharacterScreen({ onNext }) {
               <p className="sheet-label">Quête principale</p>
               <div className="sheet-value-box">
                 <span>
-                  Décrocher un poste de développeuse web junior en full remote
+                  Décrocher un poste de développeuse web junior, à Nantes ou
+                  en full remote
                 </span>
                 <span className="sheet-icon">⚔️</span>
               </div>
@@ -69,8 +70,9 @@ function CharacterScreen({ onNext }) {
                 </p>
                 <p>
                   Aujourd'hui, titre de Conceptrice Développeuse d'Applications
-                  en poche, une nouvelle quête commence : rejoindre une équipe
-                  en full remote comme développeuse web junior, pour construire
+                  en poche, une nouvelle quête commence : rejoindre une équipe,
+                  à Nantes ou en full remote, comme développeuse web junior,
+                  pour construire
                   des expériences utiles, inclusives et créatives.
                 </p>
               </div>

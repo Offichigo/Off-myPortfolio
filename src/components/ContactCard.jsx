@@ -12,7 +12,7 @@ function ContactCard() {
         <p className="contact-class">
           Développeuse web junior
           <br />
-          en full remote
+          à Nantes ou en full remote
         </p>
 
         <div className="contact-links">
